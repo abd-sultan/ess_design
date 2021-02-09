@@ -1,0 +1,185 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: #fff;
+	color: #111111;
+}
+
+@font-face {
+	font-family: 'la-solid-900';
+	src: url('../node_modules/line-awesome/dist/line-awesome/fonts/la-solid-900.ttf');
+}
+
+#republique {
+	font-family: la-solid-900;
+	/* color: red; */
+}
+
+.form-signin {
+	// width: 80%;
+	max-width: 450px;
+	padding: 3%;
+	padding-bottom: 1% !important;
+	margin-top: 5% !important;
+	margin: auto;
+	border: 4px #707070 solid;
+	border-radius: 3%;
+}
+
+/* .form-signin .checkbox label {
+	font-size: 0.8rem;
+	float: left;
+} */
+
+.form-signin label.forget {
+	font-size: 0.8rem;
+	float: right;
+}
+
+#inputEmail {
+	border: 0;
+}
+
+#inputContent {
+	border: 1px #e3e3e3 solid;
+}
+
+/* Rounded checkbox */
+.container {
+	display: block;
+	position: relative;
+	/* padding-left: 35px; */
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 0.8rem;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 15px;
+	width: 15px;
+	background-color: #eee;
+
+	border-radius: 15px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+	background-color: #1b73e8;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+	left: 5px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.ess-text {
+	color: #707070;
+	font-size: 1.4rem;
+}
+
+.fw-normal {
+	font-family: Helvetica, Arial, sans-serif;
+	letter-spacing: -0.059em;
+	transform: translate(0 24);
+	color: #111;
+	font-size: 31px !important;
+}
+
+.fw-normalx {
+	font-family: Helvetica, Arial, sans-serif;
+	letter-spacing: -0.059em;
+	/* transform: translate(0 24); */
+	color: #111;
+	float: left;
+}
+
+#un_Peuple_un_But_une_Foi {
+	transform: translate(0 6);
+	font-size: 8;
+	font-family: 'Times-Italic, Times';
+	font-style: 'italic';
+	letter-spacing: 0.027em;
+}
+
+/* navbar */
+.navbar {
+	background: #fff !important;
+}
+
+.navbar-nav .dropdown .nav-link.show svg text {
+	fill: #1b73e8 !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+	color: #1b73e8 !important;
+}
+
+.navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+	background: transparent !important;
+	cursor: pointer;
+}
+
+.navbar-nav .dropdown .dropdown-menu .dropdown-item:hover svg text {
+	fill: #1b73e8 !important;
+}
+
+@media (max-width: 991px) {
+	.navbar-nav .dropdown .dropdown-menu {
+		margin-left: 0 !important;
+		width: 100% !important;
+	}
+}
+
+/* input:focus {
+	outline: none;
+	border: none;
+} */
+
+.form-control:focus {
+	border-color: #1b73e8;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
